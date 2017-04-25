@@ -4,6 +4,7 @@
 printf "${brown}Folder to store dictionary files\n${nc}"
 read dirname
 
+mkdir  $dirname
 echo dir=$dirname >> config.sh
 
 zDictScriptDir=~/bin
