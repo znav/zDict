@@ -1,7 +1,5 @@
 #!/bin/bash
-#config
-dir=~/Documents/docs/komandos
-
+source config.sh
 red='\033[0;31m'
 brown='\033[0;33m' 
 nc='\033[0m'

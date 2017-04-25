@@ -1,5 +1,4 @@
-dir=~/Documents/docs/komandos
-
+source config.sh
 _w() 
 {
     local cur prev opts
