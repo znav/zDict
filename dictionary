@@ -72,11 +72,11 @@ w() {
 		echo "Failas dar nesukurtas, kuriama. Failu sarasas:"
 		ls $dir
 	    	printf "%-50s | %-50s \n" "$2" "$3" > $dir/$1
-		echo "---Įrašyta komanda:---"
+		echo "---Term saved:---"
 		tail -n 1 $dir/$1
 	else
 		printf "%-50s | %-50s \n" "$2" "$3" >> $dir/$1
-		echo "---Įrašyta komanda:---"
+		echo "---Term saved:---"
 		tail -n 1 $dir/$1
 	fi
 } 
