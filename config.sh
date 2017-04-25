@@ -12,3 +12,4 @@ dir=~/Documents/kaka
 dir=~/Documents/miau
 dir=~/Documents/skdfjskd
 dir=~/Documents/naujas
+dir=/home/zn/Documents/veik
