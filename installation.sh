@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Set installation dirs 
+#Set installation dirs 
 
 zDictScriptDir=~/bin
 zDictCompletionDir=/etc/bash_completion.d
