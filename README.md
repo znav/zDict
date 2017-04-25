@@ -16,7 +16,7 @@ r (READ)
  
 # INSTALLATION
 
-git clone git@github.com:znav/zDict.git ;
+>git clone git@github.com:znav/zDict.git ;
 cd zDict ;
 chmod +x installation.sh ; 
 ./installation.sh ;
