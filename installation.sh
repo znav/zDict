@@ -8,11 +8,6 @@ zDictCompletionDir=/etc/bash_completion.d
 cp dictionary $zDictScriptDir 
 cp dictionary_autocomplete $zDictCompletionDir
 
-. ${zDictScriptDir}"/dictionary"
-. ${zDictCompletionDir}"/dictionary_autocomplete" 
-. installation.sh
-
-
 #Add sourcing to bashrc if you like to use it
 printf "${brown}Add sourcing to bashrc? (y/n)? \n${nc}"
 
@@ -20,6 +15,8 @@ read rc
 
 if [ $rc == 'y' ];
 then
-  echo 'y'
+  echo . ${zDictScriptDir}"/dictionary" >> ~/.bashrc
+  echo . ${zDictCompletionDir}"/dictionary_autocomplete" >> ~/.bashrc
+else
+  echo 'Source $zDictScriptDir/dictionary and $zDictCompletionDir/dictionary_autocomplete'
 fi
-
