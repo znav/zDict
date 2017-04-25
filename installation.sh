@@ -1,7 +1,15 @@
 #!/bin/bash
 
 #dependency
-sudo apt install -y xclip
+printf "${brown}This app requires xclip. Do you want to install xclip now (requires administrator priviledges) (y/n)? \n${nc}"
+read xclipinstall
+if [ $xclipinstall == 'y' ];
+then
+  sudo apt install -y xclip
+else
+  echo 'Install xclip later if you want the app to work: sudo apt install xclip'
+fi 
+
 
 #Set installation dirs 
 printf "${brown}Folder to store dictionary files\n${nc}"
@@ -21,7 +29,7 @@ cp config.sh $zDictCompletionDir
 cp sampleFile $dirname
 
 #Add sourcing to bashrc if you like to use it
-printf "${brown}Add sourcing to bashrc? (y/n)? \n${nc}"
+printf "${brown}Add sourcing to bashrc (y/n)? \n${nc}"
 
 read rc
 
