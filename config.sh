@@ -11,3 +11,4 @@ dir=~/Documents/miau2
 dir=~/Documents/kaka
 dir=~/Documents/miau
 dir=~/Documents/skdfjskd
+dir=~/Documents/naujas

@@ -2,7 +2,8 @@
 
 #Set installation dirs 
 printf "${brown}Folder to store dictionary files\n${nc}"
-read dirname
+read -p "~/" dirname
+dirname=$HOME/$dirname
 
 mkdir  $dirname
 echo dir=$dirname >> config.sh
