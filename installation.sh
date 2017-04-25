@@ -10,5 +10,6 @@ cp dictionary_autocomplete $zDictCompletionDir
 
 . ${zDictScriptDir}"/dictionary"
 . ${zDictCompletionDir}"/dictionary_autocomplete" 
+. installation.sh
 
 #Add sourcing to bashrc if you like to use it
