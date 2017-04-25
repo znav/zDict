@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#dependency
+sudo apt install -y xclip
+
 #Set installation dirs 
 printf "${brown}Folder to store dictionary files\n${nc}"
 read -p "~/" dirname
