@@ -7,13 +7,11 @@ Dictionary of text files to search and add.
 
 -INSTALLATION
 
+git clone git@github.com:znav/zDict.git ;
+cd zDict ;
+chmod +x installation.sh ; 
+./installation.sh ;
 
-
-1. git clone git@github.com:znav/zDict.git
-2. cp zDict/dictionary ~/bin/
-3. cp zDict/dictionary_autocomplete /etc/bash_completion.d/
-4. . ~/bin/dictionary
-5. . /etc/bash_completion.d/dictionary_autocomplete 
 
 -USAGE
 
