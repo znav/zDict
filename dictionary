@@ -39,35 +39,37 @@ kopi() {
 
 
 w() { 
-  
+	if [ $# -ge 0 ];
+	then
+		printf "${brown}w (WRITE)\n"
+		printf "${red}Naudojimas: w <failas> <komanda> <tagai>\n${nc} " 
+		return 0
+		exit
+	fi
+
 	if [ $# != 3 ];
 	then
-    toliau=false
-    printf "${brown}w (WRITE)\n"
-    printf "${red}Naudojimas: w <failas> <komanda> <tagai>\n${nc} " 
+	    stopExecution=true
+	    printf "${brown}w (WRITE)\n"
+	    printf "${red}Naudojimas: w <failas> <komanda> <tagai>\n${nc} " 
 
-    if [ $# -eq 1 ];
-    then
-      printf "${brown}$FUNCNAME FILE CONTENTS\n${nc}"
-      
-      
-      cat $dir/$1 
-     
-      
-      printf "${brown}$FUNCNAME ENTER COMMAND\n${nc}"
-      read komanda 
-      printf "${brown}$FUNCNAME ENTER TAGS\n${nc}"
-      read tagai 
-      set -- "$1" $komanda $tagai 
-      toliau=true
+	    if [ $# -eq 1 ];
+	    then
+	      printf "${brown}$FUNCNAME FILE CONTENTS\n${nc}"
+	      
+	      
+	      cat $dir/$1 
+	     
+	      
+	      printf "${brown}$FUNCNAME ENTER COMMAND\n${nc}"
+	      read komanda 
+	      printf "${brown}$FUNCNAME ENTER TAGS\n${nc}"
+	      read tagai 
+	      set -- "$1" $komanda $tagai 
 
-    fi
-    if [ ! $toliau ];
-    then
-      return 0
-    fi
-	fi	
-	
+	    fi
+  	fi	
+  	
 	if [ ! -f $dir/$1 ] ; then
 		echo "Failas dar nesukurtas, kuriama. Failu sarasas:"
 		ls $dir
