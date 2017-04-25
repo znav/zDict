@@ -11,7 +11,7 @@ _w()
 
 
     if [ -f $dir/${prev} ]; then
-        printf "\nPress <ENTER>"    
+        printf "\nPress <ENTER> to show file contents"    
 
         return 0
     elif [[ ${cur} == * ]] ; then
