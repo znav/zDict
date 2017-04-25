@@ -5,14 +5,14 @@
 # USAGE
 
 w (WRITE)
->Usage: w file [command] [tags]>
-> To provide multiple arguments add quotes like this: ["tags"] 
-> To autocomplete press <TAB> 
+>Usage: w file [command] [tags]><br />
+> To provide multiple arguments add quotes like this: ["tags"] <br />
+> To autocomplete press <TAB> <br />
  
 r (READ)
-Usage: r file [command]
- To provide multiple arguments add quotes like this: ["commands"] 
- To autocomplete press <TAB> 
+>Usage: r file [command] <br />
+> To provide multiple arguments add quotes like this: ["commands"]  <br />
+> To autocomplete press <TAB>  <br />
  
 # INSTALLATION
 
