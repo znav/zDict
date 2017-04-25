@@ -37,6 +37,7 @@ if [ $rc == 'y' ];
 then
   echo . ${zDictScriptDir}"/dictionary" >> ~/.bashrc
   echo . ${zDictCompletionDir}"/dictionary_autocomplete" >> ~/.bashrc
+  echo 'Open new tab or terminal window or source ~/.bashrc'
 else
   echo 'Source $zDictScriptDir/dictionary and $zDictCompletionDir/dictionary_autocomplete'
 fi

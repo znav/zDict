@@ -14,3 +14,4 @@ dir=~/Documents/skdfjskd
 dir=~/Documents/naujas
 dir=/home/zn/Documents/veik
 dir=/home/zn/Documents/docs/dict
+dir=/home/zn/Documents/docs/dict
