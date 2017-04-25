@@ -5,7 +5,7 @@
 # USAGE
 
 w (WRITE)
->Usage: w file [command] [tags]><br />
+>Usage: w file [command] [tags]<br />
 > To provide multiple arguments add quotes like this: ["tags"] <br />
 > To autocomplete press <TAB> <br />
  
