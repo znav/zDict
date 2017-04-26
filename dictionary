@@ -69,11 +69,11 @@ w() {
 	if [ ! -f $dir/$1 ] ; then
 		echo "Failas dar nesukurtas, kuriama. Failu sarasas:"
 		ls $dir
-	    	printf "%-50s | %-50s \n" "$2" "$3" > $dir/$1
+	    	printf "%-50s | %+50s \n" "$2" "$3" > $dir/$1
 		echo "---Term saved:---"
 		tail -n 1 $dir/$1
 	else
-		printf "%-50s | %-50s \n" "$2" "$3" >> $dir/$1
+		printf "%-50s | %+50s \n" "$2" "$3" >> $dir/$1
 		echo "---Term saved:---"
 		tail -n 1 $dir/$1
 	fi
@@ -132,7 +132,7 @@ r(){
 
 
 u() {
-	xdg-open $dir/$1
+	vim $dir/$1
 }
 
 show() {
