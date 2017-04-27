@@ -21,6 +21,9 @@ cd zDict ;
 chmod +x installation.sh ; 
 ./installation.sh ;
 
+You might need permissions to /etc/bash_autocomplete.d/
+Dependencies: xclip 
+
 
 
 
